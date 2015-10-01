@@ -1,0 +1,17 @@
+application {
+  name = "otto-getting-started"
+  type = "ruby"
+  dependency {
+  	source = "../otto-proxy"
+  }
+}
+
+project {
+  name = "otto-getting-started"
+  infrastructure = "otto-getting-started"
+}
+
+infrastructure "otto-getting-started" {
+  type = "aws"
+  flavor = "simple"
+}
